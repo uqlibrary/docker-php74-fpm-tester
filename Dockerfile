@@ -1,4 +1,4 @@
-FROM uqlibrary/php74-fpm:20210212
+FROM uqlibrary/php74-fpm:20210907
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV BUILD_DEPS file re2c autoconf make g++ gcc groff less php7-dev libmemcached-dev cyrus-sasl-dev zlib-dev musl pcre-dev
