@@ -1,7 +1,7 @@
-FROM uqlibrary/php74-fpm:20210907
+FROM uqlibrary/php74-fpm-redis:20211014
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
-ENV BUILD_DEPS file re2c autoconf make g++ gcc groff less php7-dev libmemcached-dev cyrus-sasl-dev zlib-dev musl pcre-dev
+ENV BUILD_DEPS file re2c autoconf make g++ gcc groff less php7-dev libmemcached-dev cyrus-sasl-dev zlib-dev pcre-dev
 
 RUN apk add --update --no-cache $BUILD_DEPS \
     && pear config-set temp_dir /root/tmp \
